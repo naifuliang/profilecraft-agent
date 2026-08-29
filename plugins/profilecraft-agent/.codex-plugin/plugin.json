@@ -1,0 +1,29 @@
+{
+  "name": "profilecraft-agent",
+  "version": "0.1.0",
+  "description": "Policy-aware profile analysis and approval-gated LinkedIn publishing for AI agents.",
+  "author": {
+    "name": "naifuliang",
+    "url": "https://github.com/naifuliang"
+  },
+  "homepage": "https://github.com/naifuliang/profilecraft-agent#readme",
+  "repository": "https://github.com/naifuliang/profilecraft-agent",
+  "license": "MIT",
+  "keywords": ["linkedin", "profile", "mcp", "ai-agents"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "ProfileCraft Agent",
+    "shortDescription": "Optimize profiles and publish with approval.",
+    "longDescription": "Audit user-provided professional profiles, draft truthful improvements, preview posts, and publish confirmed content through LinkedIn's official API.",
+    "developerName": "naifuliang",
+    "category": "Productivity",
+    "capabilities": ["Profile analysis", "Content drafting", "Approval-gated publishing"],
+    "websiteURL": "https://github.com/naifuliang/profilecraft-agent",
+    "defaultPrompt": [
+      "Audit my professional profile and prioritize improvements.",
+      "Draft a LinkedIn post and prepare a safe preview.",
+      "Check whether this LinkedIn operation is supported."
+    ]
+  },
+  "mcpServers": "./.mcp.json"
+}

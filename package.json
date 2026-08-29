@@ -1,0 +1,65 @@
+{
+  "name": "profilecraft-agent",
+  "version": "0.1.0",
+  "description": "Policy-aware profile analysis and LinkedIn publishing tools for AI agents.",
+  "type": "module",
+  "main": "./dist/src/index.js",
+  "types": "./dist/src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/src/index.d.ts",
+      "import": "./dist/src/index.js"
+    }
+  },
+  "bin": {
+    "profilecraft": "./dist/src/cli.js",
+    "profilecraft-mcp": "./dist/src/mcp.js"
+  },
+  "files": [
+    "dist/src/",
+    "skills/",
+    "plugins/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "npm run build && node --test dist/tests/*.test.js",
+    "sync:plugin": "node scripts/sync-plugin.mjs",
+    "validate:artifacts": "node scripts/validate-artifacts.mjs",
+    "check:secrets": "node scripts/check-secrets.mjs",
+    "audit:prod": "npm audit --omit=dev --audit-level=high",
+    "check": "npm run typecheck && npm run test && npm run validate:artifacts && npm run check:secrets",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naifuliang/profilecraft-agent.git"
+  },
+  "homepage": "https://github.com/naifuliang/profilecraft-agent#readme",
+  "bugs": {
+    "url": "https://github.com/naifuliang/profilecraft-agent/issues"
+  },
+  "keywords": [
+    "ai-agents",
+    "codex",
+    "linkedin",
+    "mcp",
+    "openclaw",
+    "profile"
+  ],
+  "author": "naifuliang",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.30.0",
+    "zod": "4.5.2"
+  },
+  "devDependencies": {
+    "@types/node": "26.4.0",
+    "typescript": "7.0.2"
+  }
+}

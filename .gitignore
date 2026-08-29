@@ -1,0 +1,20 @@
+node_modules/
+dist/
+coverage/
+.DS_Store
+*.log
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# IDE and scratch files
+.idea/
+.vscode/
+*.swp
+*.tmp

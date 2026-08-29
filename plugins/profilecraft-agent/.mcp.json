@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "profilecraft": {
+      "command": "node",
+      "args": ["../../dist/src/mcp.js"],
+      "cwd": ".",
+      "env_vars": [
+        "PROFILECRAFT_LINKEDIN_ACCESS_TOKEN",
+        "PROFILECRAFT_LINKEDIN_PERSON_ID",
+        "PROFILECRAFT_LINKEDIN_VERSION",
+        "PROFILECRAFT_ENABLE_WRITES"
+      ]
+    }
+  }
+}

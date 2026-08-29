@@ -1,0 +1,4 @@
+interface:
+  display_name: "ProfileCraft"
+  short_description: "Optimize profiles and publish with approval"
+  default_prompt: "Use $profilecraft to audit my professional profile and draft truthful improvements."

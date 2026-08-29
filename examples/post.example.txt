@@ -1,0 +1,5 @@
+Reliable AI products are built through clear ownership, measurable quality, and fast feedback—not demos alone.
+
+One practice that helped our teams was treating evaluation sets like product requirements: versioned, reviewed, and connected to real user outcomes.
+
+What has made AI quality more concrete for your team?
